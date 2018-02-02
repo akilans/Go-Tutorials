@@ -12,7 +12,11 @@ func main() {
 }
 
 func getName() string {
-	name := "Akilan"
+
+	// var name string
+	// name = "Akilan"
+
+	name := "Akilan" // Auto assign to string
 	return name
 }
 
