@@ -13,4 +13,6 @@ func main() {
 	firstSkill.print()
 	lastSkill.print()
 
+	fmt.Println(skills.toString())
+
 }
