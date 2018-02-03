@@ -1,3 +1,5 @@
+// go run main.go
+// go test - test the test case written in main_test.go file
 package main
 
 import (

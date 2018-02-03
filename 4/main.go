@@ -1,3 +1,4 @@
+// go run main.go skill.go
 package main
 
 import "fmt"
