@@ -4,9 +4,14 @@
 # Basic CLI commands
     * go run hello.go - compile & executes file
     * go build hello.go - compiles the file & creates binary
-    * go fmt -
+    * gofmt - Format the GO program. Align it properly but won't write permanently 
+    * gofmt -d main.go - Shows the difference between aligned one with previous one
+    * gofmt -w main.go - Rewrite the file with proper alignment [ go fmt main.go does the same thing]
     * go install - 
-    * go get -
+    * go get - go get golang.org/x/tools/cmd/goimports [ Install the package in $GOPATH [/home/akilan/go ]]
+    * goimports main.go - removes/adds import packages
+    * goimports -d main.go - shows the difference removes/adds import packages
+    * goimports -w main.go - Rewrite the file with proper with removes/adds import packages
     * go test - 
 
 # Build for multiple platforms
