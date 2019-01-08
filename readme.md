@@ -12,7 +12,15 @@
     * goimports main.go - removes/adds import packages
     * goimports -d main.go - shows the difference removes/adds import packages
     * goimports -w main.go - Rewrite the file with proper with removes/adds import packages
-    * go test - 
+    * go test -
+    * go list -f "{{ .Name }}: {{ .Doc }}" - List main package with Documentation
+    * go list -f "{{ .Imports }}" - Lists all the import packages
+    * go list -f "{{ .Imports }}" fmt - Lists all the dependent packages for "fmt"
+    * go list -f '{{ join .Imports"\n"  }}' fmt - Formatted o/p
+    * go doc - Documentaion for main package
+    * go doc fmt - Documentation for fmt package
+    * go doc fmt Println - Documentation for Println under fmt package
+    * godoc -http :6060 -  Access it in browser 
 
 # Build for multiple platforms
 

@@ -11,6 +11,17 @@ import (
 )
 
 func main() {
+	friends := make(map[string]string)
+
+	friends["Alex"] = "Chennai"
+	friends["Jegan"] = "kovai"
+
+	fmt.Println(friends)
+	fmt.Println(friends["Alex"])
+
+	delete(friends, "Alex") // Delete from map
+	fmt.Println(friends)
+
 	employees := map[string]string{
 		"name":     "Akilan",
 		"role":     "Devops Engineer",
